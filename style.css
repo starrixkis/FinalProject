@@ -109,13 +109,13 @@ section{
     bottom: 30px;
     left: 30px;
 
-    animation-name: move-planet;
+    animation-name: move;
     animation-duration:  2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes move-planet{
+@keyframes move{
     from{transform: translateY(0px)}
     to{transform: translateY(70px);}
 }
@@ -129,7 +129,7 @@ section{
 }
 
 .about-content{
-    width: 35%;
+    width: 60%;
     height: 270px;
     border-radius: 0px 0px 0px 20px;
     padding-left: 40px;
@@ -137,6 +137,7 @@ section{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -164,7 +165,7 @@ section{
 .about-card p{
     color: black;
     font-size: 17px;
-    margin-left: 20px;
+    padding-left: 20px;
     align-self: start;
     line-height: 25px;
     font-family: 'Comfortaa';
@@ -172,4 +173,119 @@ section{
 
 .about-card img{
     padding-bottom: 20px;
+}
+
+.moving-cloud{
+    background: url(img/cloud.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    animation-name: move;
+    animation-duration:  3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: black;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3{
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+}
+
+.comment-card p{
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 327px;
+    height: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p{
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    max-width: 250px;
+}
+
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a{
+    margin-right: 15px;
 }
