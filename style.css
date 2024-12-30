@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -9,6 +11,59 @@ section{
     min-height: 100vh;
     position: relative;
 }
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+}
+
+.nav-link:hover{
+    background-color: #bbff2c;
+}
+
+.logo{
+    color: #bbff2c;
+    font-size: 80px;
+    padding-left: 50px;
+}
+
+.active{
+    background-color: #aa79ff;
+}
+
 
 #main{
     background-image: url(img/bgMAIN.png)
@@ -29,6 +84,7 @@ section{
 #comments{
     background-image: url(img/bgCOMMENTS.png);
 }
+
 
 .main-block, .about-block, .skills-block, .works-block, .comments-block{
     display: flex;
