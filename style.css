@@ -216,6 +216,17 @@ section{
 }
 
 
+.works-block img{
+    border-radius: 20px;
+    height: 300px;
+}
+
+.works-block{
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .comments-block{
     justify-content: space-evenly;
     max-width: 1150px;
